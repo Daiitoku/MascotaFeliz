@@ -12,7 +12,7 @@ namespace MascotaFeliz.App.Consola
 
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            Console.WriteLine("Hola mundo");
             //AddDueno();
             AddVeterinario();
 
