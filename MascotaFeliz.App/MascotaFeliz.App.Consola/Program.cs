@@ -91,6 +91,19 @@ private static void ListarMascotas()
             }
         }
 
+private static void BuscarVeterinario(int idVeterinario)
+        {
+            var veterinario = _repoVeterinario.GetVeterinario(idVeterinario);
+            Console.WriteLine( veterinario.Nombre + " " + veterinario.Nombres + " " + veterinario.Apellidos + " " + veterinario.Direccion + " " + veterinario.Telefono + " " +veterinario.TarjetaProfesional);
+        }
+
+private static void ListarVeterinario()
+        {
+            var mascotas = _repoVeterinario.GetAllVeterinarios();
+            foreach (Veterinario d in veterinarios)
+            {
+                Console.WriteLine(d.Nombres + " " + d.Apellidos);
+            }
 
     }
 }
