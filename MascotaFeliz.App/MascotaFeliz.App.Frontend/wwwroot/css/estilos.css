@@ -410,4 +410,38 @@ main {
     color: var(--blanco);
   
   }
-  
+  /* Tabla */
+  .table{
+    margin: 0 auto;
+    font-size: 1.8rem;
+    text-align: left;
+    border-collapse: collapse;
+
+  }
+  th, td{
+    
+    padding: 2rem;
+  }
+  thead{
+    
+    border-bottom: 5px solid var(--negro);
+    color: var(--azul-oscuro);
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+  tr:nth-child(even){
+    background-color: #ddd;
+  }
+
+  tr:hover td{
+    background-color: var(--azul-oscuro);
+    color: var(--blanco);
+  }
+
+  .table__boton{
+    width: 25px;
+    height: 25px;
+    background-image:url(../img/lupa.svg);
+   
+   
+  }
