@@ -25,17 +25,17 @@ namespace MascotaFeliz.App.Persistencia
 
         public Veterinario AddVeterinario(Veterinario veterinario)
         {
-            var veterinarioAdicionado = _appContext.Veterinario.Add(veterinario);
+            var veterinarioAdicionado = _appContext.Veterinarios.Add(veterinario);
             _appContext.SaveChanges();
             return veterinarioAdicionado.Entity;
         }
 
         public void DeleteVeterinario(int idVeterinario)
         {
-            var veterinarioEncontrado = _appContext.Veterinario.FirstOrDefault(v => v.Id == idVeterinario);
+            var veterinarioEncontrado = _appContext.Veterinarios.FirstOrDefault(v => v.Id == idVeterinario);
             if (veterinarioEncontrado == null)
                 return;
-            _appContext.Veterinario.Remove(veterinarioEncontrado);
+            _appContext.Veterinarios.Remove(veterinarioEncontrado);
             _appContext.SaveChanges();
         }
 
@@ -59,17 +59,17 @@ namespace MascotaFeliz.App.Persistencia
 
         public IEnumerable<Veterinario> GetAllVeterinarios_()
         {
-            return _appContext.Veterinario;
+            return _appContext.Veterinarios;
         }
 
         public Veterinario GetVeterinario(int idVeterinario)
         {
-            return _appContext.Veterinario.FirstOrDefault(v => v.Id == idVeterinario);
+            return _appContext.Veterinarios.FirstOrDefault(v => v.Id == idVeterinario);
         }
 
         public Veterinario UpdateVeterinario(Veterinario veterinario)
         {
-            var VeterinarioEncontrado = _appContext.Veterinario.FirstOrDefault(d => d.Id == veterinario.Id);
+            var VeterinarioEncontrado = _appContext.Veterinarios.FirstOrDefault(d => d.Id == veterinario.Id);
             if (VeterinarioEncontrado != null)
             {
                 VeterinarioEncontrado.Nombres = veterinario.Nombres;

@@ -9,16 +9,17 @@ namespace MascotaFeliz.App.Consola
     {
         private static IRepositorioDueno _repoDueno = new RepositorioDueno(new Persistencia.AppContext());
         private static IRepositorioVeterinario _repoVeterinario = new RepositorioVeterinario(new Persistencia.AppContext());
+       /*  private static IRepositorioMascota _repoMascota = new RepositorioMascota(new Persistencia.AppContext()); */
 
         static void Main(string[] args)
         {
             Console.WriteLine("Hola mundo");
             //AddDueno();
-           // AddVeterinario();
+            AddVeterinario();
            // AddMascota();
            //BuscarDueno();
            //ListarDuenos();
-           ListarMascota();
+           //ListarMascota();
         }
         private static void AddDueno()
         {
@@ -48,7 +49,7 @@ namespace MascotaFeliz.App.Consola
             _repoVeterinario.AddVeterinario(veterinario);
         }
 
-private static void AddMascota()
+/* private static void AddMascota()
         {
             var mascota = new Mascota
             {
@@ -60,7 +61,7 @@ private static void AddMascota()
                 
             };
             _repoMascota.AddMascota(mascota);
-        }
+        } */
 
         private static void BuscarDueno(int idDueno)
         {
@@ -76,34 +77,35 @@ private static void ListarDuenos()
                 Console.WriteLine(d.Nombres + " " + d.Apellidos);
             }
         }
-private static void BuscarMascota(int idMascota)
+/* private static void BuscarMascota(int idMascota)
         {
             var mascota = _repoMascota.GetMascota(idMascota);
             Console.WriteLine( mascota.Nombre + " " + mascota.Color + " " + mascota.Raza + " " + mascota.Especie);
-        }
+        } */
 
-private static void ListarMascotas()
+/* private static void ListarMascotas()
         {
             var mascotas = _repoMascota.GetAllMascotas();
             foreach (Mascota d in mascotas)
             {
                 Console.WriteLine(d.Nombre + " " + d.Raza+ " " +d.Especie);
             }
-        }
+        } */
 
 private static void BuscarVeterinario(int idVeterinario)
         {
             var veterinario = _repoVeterinario.GetVeterinario(idVeterinario);
-            Console.WriteLine( veterinario.Nombre + " " + veterinario.Nombres + " " + veterinario.Apellidos + " " + veterinario.Direccion + " " + veterinario.Telefono + " " +veterinario.TarjetaProfesional);
+            Console.WriteLine( veterinario.Nombres + " " + veterinario.Apellidos + " " + veterinario.Direccion + " " + veterinario.Telefono + " " +veterinario.TarjetaProfesional);
         }
 
 private static void ListarVeterinario()
         {
-            var mascotas = _repoVeterinario.GetAllVeterinarios();
+            var veterinarios = _repoVeterinario.GetAllVeterinarios();
             foreach (Veterinario d in veterinarios)
             {
                 Console.WriteLine(d.Nombres + " " + d.Apellidos);
             }
 
     }
+}
 }
