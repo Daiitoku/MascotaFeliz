@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "DtyHRIYnGHpBnZJyKtrCvwDQ6wsSVeA3SnatJLPkmn/Xu+k3aYs7EeQL7PWATiyi0tPMpD7IyA0MXxQFB7Cowg==",
+  "dgSpecHash": "8qDNOzZAHMpZZ0gGCpVUQzCAa2yMsAmvStXLoV8KejZ7rqWReTLeTo1BCtjjulJDRN2s4D6BEgauIlMoMp2etw==",
   "success": true,
-  "projectFilePath": "C:\\Mascotas\\MascotaFeliz\\MascotaFeliz.App\\mascotafeliz.app.frontend\\MascotaFeliz.App.Frontend.csproj",
+  "projectFilePath": "C:\\Mascotas\\MascotaFeliz\\MascotaFeliz.App\\Mascotafeliz.app.frontend\\MascotaFeliz.App.Frontend.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\PC\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
     "C:\\Users\\PC\\.nuget\\packages\\microsoft.data.sqlclient\\2.0.1\\microsoft.data.sqlclient.2.0.1.nupkg.sha512",

@@ -84,3 +84,4 @@ C:\Mascotas\MascotaFeliz\MascotaFeliz.App\mascotafeliz.app.frontend\obj\Debug\ne
 C:\Mascotas\MascotaFeliz\MascotaFeliz.App\mascotafeliz.app.frontend\obj\Debug\netcoreapp3.1\Razor\Pages\Duenos\AgregarDueno.cshtml.g.cs
 C:\Mascotas\MascotaFeliz\MascotaFeliz.App\mascotafeliz.app.frontend\obj\Debug\netcoreapp3.1\Razor\Pages\Mascotas\AgregarMascotas.cshtml.g.cs
 C:\Mascotas\MascotaFeliz\MascotaFeliz.App\mascotafeliz.app.frontend\obj\Debug\netcoreapp3.1\Razor\Pages\Veterinarios\AgregarVeterinario.cshtml.g.cs
+C:\Mascotas\MascotaFeliz\MascotaFeliz.App\mascotafeliz.app.frontend\obj\Debug\netcoreapp3.1\Razor\Pages\Mascotas\DetallesMascota.cshtml.g.cs
