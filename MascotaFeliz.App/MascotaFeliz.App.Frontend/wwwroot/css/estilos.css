@@ -334,13 +334,13 @@ main {
 
 }
 
-@media (min-width: 768px) {
+/* @media (min-width: 768px) {
     .formulario {
         display: grid;
         grid-template-columns: 2fr 1fr;
         gap: 2rem;
     }
-}
+} */
 
 .campos {
     padding: 2rem;
@@ -351,8 +351,9 @@ main {
 
 .campo {
     display: flex;
-    margin: 2rem auto;
     flex-direction: column;
+    margin: 2rem auto;
+   
 
 
 }
@@ -373,11 +374,13 @@ main {
         flex-direction: row;
         gap: 2rem;
         align-items: center;
-        justify-content: center;
+        justify-content:space-between;
+        /* display: grid;
+        grid-template-columns: 1fr 2fr; */
     }
 
     .campo__label {
-        text-align: right;
+        text-align: left;
         flex: 0 0 9rem;
     }
 }
@@ -401,6 +404,7 @@ main {
     color: var(--blanco);
     padding: 1rem 3rem;
     display: inline-block;
+    width: 100px;
 }
 
 .textarea {
@@ -463,12 +467,17 @@ tr:hover td {
     display: block;
     width: 25px;
     height: 25px;
-    background-image: url(../img/lupa.svg);
+   
     visibility: visible;
     opacity: 1;
 
 }
-
+.table__boton-detalle{
+    background-image: url(../img/lupa.svg);
+}
+.table__boton-update{
+    background-image: url(../img/update.svg);
+}
 /* Detalle */
 .detalle {
     display: flex;
@@ -489,11 +498,12 @@ tr:hover td {
     border-radius: 5rem;
     text-align: center;
     color: var(--blanco);
-    background:
+    background-color: var(--azul);
+    /* background:
 		linear-gradient(-135deg, rgb(34, 76, 152) 10%, transparent),
 		repeating-linear-gradient(45deg, rgba(34, 76, 152, 1) 0%, rgba(31, 48, 94, 0.6) 5%, transparent 5%, transparent 10%),
 		repeating-linear-gradient(-45deg, rgba(34, 76, 152, 0.4) 0%, rgba(31, 48, 94, 0.5) 5%, transparent 5%, transparent 10%);
-	background-color: rgba(34, 76, 152, 0.25);
+	background-color: rgba(34, 76, 152, 0.25); */
 }
 
 .card__head {
@@ -521,14 +531,28 @@ tr:hover td {
     width: 100%;
     text-align: center;
 }
-.contenedor>a{
+.contenedor{
+    text-align: center;
+}
+.contenedor>a, .contenedor input{
     width: 100px;
-    position: relative;
+ /*    position:calc(50% - 50px);
     left:calc(50% - 50px) ;
-    margin: 0 auto;
+    margin: 0 auto; */
 }
 .fondo{
     padding: 2rem;
-    background-image: url(../img/fondo-gris.jpg);
+    background-image: url(../img/mascotas.jpg);
+    background-repeat: no-repeat;
     margin-bottom: 2rem;
+}
+.contenido{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+}
+.imagenMascota{
+    display: block;
+    background-size: contain;
+    background-image: url(../img/mascotas.jpg);
 }

@@ -27,8 +27,13 @@
                 <td>@mascota.Raza</td>
                 <td>
                     <div>
+                        <a class="table__boton table__boton-detalle"  asp-page="./DetallesMascota" asp-route-mascotaId= "@mascota.Id"></a>
                         
-                        <a class="table__boton"  asp-page="./DetallesMascota" asp-route-mascotaId= "@mascota.Id"></a>
+                    </div>
+                </td>
+                <td>
+                    <div>
+                        <a class="table__boton table__boton-update"  asp-page="./AgregarMascotas" asp-route-mascotaId= "@mascota.Id"></a>
                     </div>
 
                 </td>

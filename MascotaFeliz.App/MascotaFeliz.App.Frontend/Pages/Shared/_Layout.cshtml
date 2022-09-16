@@ -1,5 +1,6 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -10,28 +11,43 @@
     @* <link rel="stylesheet" href="~/css/site.css" /> *@
     <link rel="stylesheet" href="~/css/estilos.css">
 </head>
+
 <body>
-   <header>
+    <header>
         <div class="cabecera">
-             <a href="/Index"><h1> Mascota Feliz</h1></a>
+            <a href="/Index">
+                <h1> Mascota Feliz</h1>
+            </a>
         </div>
         <div class="navegacion">
             <input type="checkbox" name="" id="check__navegacion">
             <label for="check__navegacion" class="label__navegacion">
-                
+
             </label>
             <nav>
                 <ul>
                     <li><a href="/Index">Inicio</a></li>
                     <li><a href="#">Mascota</a>
                         <ul>
-                            <li><a href="/Mascotas/AgregarMascotas">CRUD Mascota</a></li>
+                            <li><a href="/Mascotas/AgregarMascotas">Agregar Mascota</a></li>
                             <li><a href="/Mascotas/ListarMascotas">Listar Mascotas</a></li>
                         </ul>
                     </li>
-                    <li><a href="/Duenos/AgregarDueno">Dueño</a></li>
-                    <li><a href="/Veterinarios/AgregarVeterinario">Veterinario</a></li>
-                    <li><a href="#">Visita</a></li>
+                    <li><a href="#">Dueño</a>
+                        <ul>
+                            <li><a href="/Duenos/AgregarDueno">Agregar Dueño</a></li>
+                            <li><a href=#>listar Dueño</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Veterinario</a>
+                        <ul>
+                            <li><a href="/Veterinarios/AgregarVeterinario">Agregar Veterinario</a></li>
+                            <li><a href="#">Listar Veterinarios</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Visita</a>
+
+                    </li>
                 </ul>
             </nav>
         </div>
@@ -43,7 +59,7 @@
         </main>
     </div>
 
-     <footer class="footer contenedor">
+    <footer class="footer contenedor">
         <h3>
             <p> Todos los derechos reservados Grupo 4 MisionTic 2022 </p>
         </h3>
@@ -55,4 +71,5 @@
 
     @RenderSection("Scripts", required: false)
 </body>
+
 </html>
