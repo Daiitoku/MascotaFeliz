@@ -11,16 +11,30 @@
     </div>
     <div class="contenido">
         <div class="card">
-            <div class="card__head">
+            <div class="card__inner">
+                <div class="card__front">
+                    <img src=" @Url.Content("~/img/cat&dog.jpg")" alt="Mascotas">
+                    <h3>@Model.mascota.Nombre</h3>
+                </div>
+                <div class="card__back">
+                    
+                    <p class="detalle"> <span> Id:</span> <span class="card__span">@Model.mascota.Id</span> </p>
+                    <p class="detalle"> <span> Color:</span><span class="card__span"> @Model.mascota.Color</span></p>
+                    <p class="detalle"><span> Especie:</span><span class="card__span"> @Model.mascota.Especie</span></p>
+                    <p class="detalle"><span> Raza:</span><span class="card__span"> @Model.mascota.Raza</span></p>
+                </div>
+            </div>
+            @* <div class="card__head">
                 <h3>@Model.mascota.Nombre</h3>
+
             </div>
             <p class="detalle"> <span> Id:</span> <span class="card__span">@Model.mascota.Id</span> </p>
             <p class="detalle"> <span> Color:</span><span class="card__span"> @Model.mascota.Color</span></p>
             <p class="detalle"><span> Especie:</span><span class="card__span"> @Model.mascota.Especie</span></p>
-            <p class="detalle"><span> Raza:</span><span class="card__span"> @Model.mascota.Raza</span></p>
+            <p class="detalle"><span> Raza:</span><span class="card__span"> @Model.mascota.Raza</span></p> *@
         </div>
         <div class="imagenMascota"></div>
-        
+
     </div>
     <div class="contenedor">
         <a asp-page="./ListarMascotas" class="boton">Volver</a>

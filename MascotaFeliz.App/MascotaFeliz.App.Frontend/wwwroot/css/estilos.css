@@ -332,6 +332,7 @@ main {
     padding: 2rem;
 
 
+
 }
 
 /* @media (min-width: 768px) {
@@ -346,6 +347,7 @@ main {
     padding: 2rem;
     background-color: var(--gris);
     margin-bottom: 2rem;
+    margin-top: 5rem;
 
 }
 
@@ -353,7 +355,7 @@ main {
     display: flex;
     flex-direction: column;
     margin: 2rem auto;
-   
+
 
 
 }
@@ -366,15 +368,12 @@ main {
 }
 
 @media (min-width: 480px) {
-    .campos {
-        margin-bottom: 0;
-    }
 
     .campo {
         flex-direction: row;
         gap: 2rem;
         align-items: center;
-        justify-content:space-between;
+        justify-content: space-between;
         /* display: grid;
         grid-template-columns: 1fr 2fr; */
     }
@@ -400,11 +399,17 @@ main {
 
 .boton {
     border: none;
-    background-color: var(--azul);
+    background-color: var(--azul-oscuro);
     color: var(--blanco);
-    padding: 1rem 3rem;
+    padding: 1rem 2rem;
     display: inline-block;
     width: 100px;
+    transition: all 300ms ease;
+}
+
+.boton:hover {
+    background-color: var(--azul);
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
 }
 
 .textarea {
@@ -467,17 +472,20 @@ tr:hover td {
     display: block;
     width: 25px;
     height: 25px;
-   
+
     visibility: visible;
     opacity: 1;
 
 }
-.table__boton-detalle{
+
+.table__boton-detalle {
     background-image: url(../img/lupa.svg);
 }
-.table__boton-update{
+
+.table__boton-update {
     background-image: url(../img/update.svg);
 }
+
 /* Detalle */
 .detalle {
     display: flex;
@@ -488,71 +496,119 @@ tr:hover td {
     width: 100%;
     text-align: center;
     padding: 2rem;
-    
+
 }
 
-.card {
-    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
-    max-width: 300px;
+/* .card {
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    width: 70%;
     margin: auto;
-    border-radius: 5rem;
+    border-radius: 1rem;
     text-align: center;
     color: var(--blanco);
     background-color: var(--azul);
-    /* background:
+    background:
 		linear-gradient(-135deg, rgb(34, 76, 152) 10%, transparent),
 		repeating-linear-gradient(45deg, rgba(34, 76, 152, 1) 0%, rgba(31, 48, 94, 0.6) 5%, transparent 5%, transparent 10%),
 		repeating-linear-gradient(-45deg, rgba(34, 76, 152, 0.4) 0%, rgba(31, 48, 94, 0.5) 5%, transparent 5%, transparent 10%);
-	background-color: rgba(34, 76, 152, 0.25); */
+	background-color: rgba(34, 76, 152, 0.25);
+} */
+
+
+
+.contenedor {
+    text-align: center;
+    margin: 0 auto;
 }
 
-.card__head {
-    display: block;
-    background-color:var(--negro);
-    color: var(--azul);
+.contenedor>a,
+.contenedor input {
+    width: 100px;
+
+}
+
+
+@media(min-width: 768px) {
+    .contenido {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem;
+    }
+}
+
+.imagenMascota {
+    display: none;
+}
+
+@media(min-width: 768px) {
+    .imagenMascota {
+        display: block;
+        background-size: contain;
+        background-image: url(../img/mascotas.jpg);
+    }
+}
+
+.card {
+    background-color: transparent;
+    width: 300px;
+    height: 350px;
+    margin: 5rem auto;
+    perspective: 1000px;
+}
+
+.card__inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+
+.card:hover .card__inner {
+    transform: rotateY(180deg);
+}
+
+.card__front,
+.card__back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    /* Safari */
+    backface-visibility: hidden;
+}
+
+.card__front {
+    background-color: var(--azul);
+    color: var(--blanco);
+}
+
+.card__back {
+    background-color: dodgerblue;
+    color: white;
+    transform: rotateY(180deg);
+}
+
+.card__front img {
+    width: 100%;
+    height: 250px;
+}
+.card__front>h3{
     font-weight: 700;
-    height: 80px;
-    padding: 2rem;
-
-}
-
-.card__head h3 {
     font-size: 2.8rem;
-    margin: auto;
+    text-transform: uppercase;
 }
-.card__span{
-    
+.card__span {
+
     font-weight: 700;
     font-size: 1.8rem;
-    
+
 }
-.card p span{
+
+.card p span {
     display: block;
     width: 100%;
     text-align: center;
-}
-.contenedor{
-    text-align: center;
-}
-.contenedor>a, .contenedor input{
-    width: 100px;
- /*    position:calc(50% - 50px);
-    left:calc(50% - 50px) ;
-    margin: 0 auto; */
-}
-.fondo{
-    padding: 2rem;
-    background-image: url(../img/mascotas.jpg);
-    background-repeat: no-repeat;
-    margin-bottom: 2rem;
-}
-.contenido{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 2rem;
-}
-.imagenMascota{
-    display: block;
-    background-size: contain;
-    background-image: url(../img/mascotas.jpg);
 }
