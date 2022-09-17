@@ -496,7 +496,18 @@ tr:hover td {
     width: 100%;
     text-align: center;
     padding: 2rem;
+}
 
+/* Detalle Veterinario */
+.detalle_vet {
+    display: flex;
+    gap: 2rem;
+    justify-content: space-between;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.8rem;
+    width: 100%;
+    text-align: center;
+    padding: .3rem;
 }
 
 /* .card {
@@ -601,13 +612,79 @@ tr:hover td {
     text-transform: uppercase;
 }
 .card__span {
-
     font-weight: 700;
     font-size: 1.8rem;
-
 }
 
 .card p span {
+    display: block;
+    width: 100%;
+    text-align: center;
+}
+
+/* Card Veterinario */
+.card_vet {
+
+    background-color: transparent;
+    width: 300px;
+    height: 500px;
+    margin: 5rem auto;
+    perspective: 1000px;
+}
+
+.card__inner_vet {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+
+.card_vet:hover .card__inner_vet {
+    transform: rotateY(180deg);
+}
+
+.card__front_vet,
+.card__back_vet {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    /* Safari */
+    backface-visibility: hidden;
+}
+
+.card__front_vet {
+    background-color: var(--azul);
+    color: var(--blanco);
+}
+
+.card__back_vet {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    background-color: dodgerblue;
+    color: white;
+    transform: rotateY(180deg);
+}
+
+.card__front_vet img {
+    width: 100%;
+    height: 250px;
+}
+.card__front_vet>h3{
+    font-weight: 700;
+    font-size: 2.8rem;
+    text-transform: uppercase;
+}
+.card__span_vet {
+    font-weight: 700;
+    font-size: 1.8rem;
+}
+
+.card_vet p span {
     display: block;
     width: 100%;
     text-align: center;

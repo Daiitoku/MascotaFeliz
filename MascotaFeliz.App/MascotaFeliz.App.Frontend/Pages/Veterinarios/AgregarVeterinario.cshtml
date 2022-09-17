@@ -5,46 +5,44 @@
 <main class="contenedor sombra">
         <div class="titulo">
             <img class="titulo__imagen" src="@Url.Content("~/img/huella.svg")" alt="Huella">
-            <h2>Veterinario</h2>
+            <h2>Registro Veterinario</h2>
             <img class="titulo__imagen" src="@Url.Content("~/img/huella.svg")" alt="Huella">
         </div>
-        <form action="" class="formulario">
+        <div class="contenido">
+        <form action="" class="formulario" method="post">
             <div class="campos">
                 <div class="campo">
-                    <label for="id" class="campo__label">Id:</label>
-                    <input type="text" class="campo__texto" id="id" tabindex="1">
-                </div>
-                <div class="campo">
-                    <label for="nombre" class="campo__label">Nombre:</label>
-                    <input type="text" class="campo__texto" id="nombre" tabindex="2">
+                    <label for="nombre" class="campo__label">Nombres:</label>
+                    <input type="text" class="campo__texto" id="nombre" asp-for="veterinario.Nombres" tabindex="2">
                 </div>
 
                 <div class="campo">
-                    <label for="apellido" class="campo__label">Apellido:</label>
-                    <input type="text" class="campo__texto" id="apellido" tabindex="3">
+                    <label for="apellido" class="campo__label">Apellidos:</label>
+                    <input type="text" class="campo__texto" id="apellido" asp-for="veterinario.Apellidos"tabindex="3">
                 </div>
 
                 <div class="campo">
                     <label for="direccion" class="campo__label">Dirección:</label>
-                    <input type="text" class="campo__texto" id="direccion" tabindex="4">
+                    <input type="text" class="campo__texto" id="direccion" asp-for="veterinario.Direccion" tabindex="4">
                 </div>
 
                 <div class="campo">
                     <label for="telefono" class="campo__label">Teléfono:</label>
-                    <input type="text" class="campo__texto" id="telefono" tabindex="5">
+                    <input type="text" class="campo__texto" id="telefono" asp-for="veterinario.Telefono" tabindex="5">
                 </div>
                 <div class="campo">
                     <label for="tarjeta" class="campo__label">T Prof:</label>
-                    <input type="text" class="campo__texto" id="tarjeta" tabindex="6">
+                    <input type="text" class="campo__texto" id="tarjeta" asp-for="veterinario.TarjetaProfesional" tabindex="6">
                 </div>
             </div>
-            <div class="botonera">
-                <input class="boton" type="submit" value="Crear">
-                <input class="boton" type="submit" value="Actualizar">
+            <div class="contenedor">
+                <input class="boton" type="submit" value="Guardar">
+                @* <input class="boton" type="submit" value="Actualizar">
                 <input class="boton" type="submit" value="Consultar">
-                <input class="boton" type="submit" value="Borrar">
+                <input class="boton" type="submit" value="Borrar"> *@
             </div>
         </form>
-
+        <div class="imagenMascota"></div>
+        </div>
         
     </main>
