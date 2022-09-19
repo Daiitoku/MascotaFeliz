@@ -1,0 +1,48 @@
+﻿@page
+@model MascotaFeliz.App.Frontend.Pages.ListarDuenosModel
+@{
+}
+<main class="contenedor sombra">
+    <div class="titulo">
+        <img class="titulo__imagen" src="@Url.Content("~/img/huella.svg")" alt="Huella">
+        <h2>Listado de Dueños</h2>
+        <img class="titulo__imagen" src="@Url.Content("~/img/huella.svg")" alt="Huella">
+    </div>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Nombre</th>
+                <th>Apellido</th>
+                <th>Dirección</th>
+                <th>Telefono</th>
+                <th>Correo</th>
+            </tr>
+        </thead>
+
+        @foreach (var dueno in Model.ListarDuenos)
+        {
+            <tr>
+                <td>@dueno.Nombres</td>
+                <td>@dueno.Apellidos</td>
+                <td>@dueno.Direccion</td>
+                <td>@dueno.Telefono</td>
+                <td>@dueno.Correo</td>
+                <td>
+                    <div>
+                        <a class="table__boton table__boton-detalle"  asp-page="./DetallesDuenos" asp-route-duenoId= "@dueno.Id"></a>
+                        
+                    </div>
+                </td>
+                <td>
+                    <div>
+                        <a class="table__boton table__boton-update"  asp-page="./AgregarDueno" asp-route-duenoId= "@dueno.Id"></a>
+                    </div>
+
+ 
+
+                </td>
+                <br>
+            </tr>
+        }
+    </table>
+</main>
