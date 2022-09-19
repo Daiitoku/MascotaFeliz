@@ -5738,19 +5738,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\User\\.nuget\\packages\\": {}
+    "C:\\Users\\PC\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\Misiontic\\MascotaFeliz\\MascotaFeliz.App\\MascotaFeliz.App.Frontend\\MascotaFeliz.App.Frontend.csproj",
+      "projectUniqueName": "C:\\Mascotas\\MascotaFeliz\\MascotaFeliz.App\\mascotafeliz.app.frontend\\MascotaFeliz.App.Frontend.csproj",
       "projectName": "MascotaFeliz.App.Frontend",
-      "projectPath": "E:\\Misiontic\\MascotaFeliz\\MascotaFeliz.App\\MascotaFeliz.App.Frontend\\MascotaFeliz.App.Frontend.csproj",
-      "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-      "outputPath": "E:\\Misiontic\\MascotaFeliz\\MascotaFeliz.App\\MascotaFeliz.App.Frontend\\obj\\",
+      "projectPath": "C:\\Mascotas\\MascotaFeliz\\MascotaFeliz.App\\mascotafeliz.app.frontend\\MascotaFeliz.App.Frontend.csproj",
+      "packagesPath": "C:\\Users\\PC\\.nuget\\packages\\",
+      "outputPath": "C:\\Mascotas\\MascotaFeliz\\MascotaFeliz.App\\mascotafeliz.app.frontend\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\PC\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp3.1"
@@ -5761,11 +5761,11 @@
       "frameworks": {
         "netcoreapp3.1": {
           "projectReferences": {
-            "E:\\Misiontic\\MascotaFeliz\\MascotaFeliz.App\\MascotaFeliz.App.Dominio\\MascotaFeliz.App.Dominio.csproj": {
-              "projectPath": "E:\\Misiontic\\MascotaFeliz\\MascotaFeliz.App\\MascotaFeliz.App.Dominio\\MascotaFeliz.App.Dominio.csproj"
+            "C:\\Mascotas\\MascotaFeliz\\MascotaFeliz.App\\MascotaFeliz.App.Dominio\\MascotaFeliz.App.Dominio.csproj": {
+              "projectPath": "C:\\Mascotas\\MascotaFeliz\\MascotaFeliz.App\\MascotaFeliz.App.Dominio\\MascotaFeliz.App.Dominio.csproj"
             },
-            "E:\\Misiontic\\MascotaFeliz\\MascotaFeliz.App\\MascotaFeliz.App.Persistencia\\MascotaFeliz.App.Persistencia.csproj": {
-              "projectPath": "E:\\Misiontic\\MascotaFeliz\\MascotaFeliz.App\\MascotaFeliz.App.Persistencia\\MascotaFeliz.App.Persistencia.csproj"
+            "C:\\Mascotas\\MascotaFeliz\\MascotaFeliz.App\\MascotaFeliz.App.Persistencia\\MascotaFeliz.App.Persistencia.csproj": {
+              "projectPath": "C:\\Mascotas\\MascotaFeliz\\MascotaFeliz.App\\MascotaFeliz.App.Persistencia\\MascotaFeliz.App.Persistencia.csproj"
             }
           }
         }

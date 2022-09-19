@@ -176,3 +176,5 @@ E:\Misiontic\MascotaFeliz\MascotaFeliz.App\MascotaFeliz.App.Frontend\obj\Debug\n
 E:\Misiontic\MascotaFeliz\MascotaFeliz.App\MascotaFeliz.App.Frontend\obj\Debug\netcoreapp3.1\MascotaFeliz.App.Frontend.genruntimeconfig.cache
 E:\Misiontic\MascotaFeliz\MascotaFeliz.App\MascotaFeliz.App.Frontend\obj\Debug\netcoreapp3.1\Razor\Pages\Veterinarios\ListarVeterinarios.cshtml.g.cs
 E:\Misiontic\MascotaFeliz\MascotaFeliz.App\MascotaFeliz.App.Frontend\obj\Debug\netcoreapp3.1\Razor\Pages\Veterinarios\DetallesVeterinario.cshtml.g.cs
+C:\Mascotas\MascotaFeliz\MascotaFeliz.App\mascotafeliz.app.frontend\obj\Debug\netcoreapp3.1\Razor\Pages\Veterinarios\DetallesVeterinario.cshtml.g.cs
+C:\Mascotas\MascotaFeliz\MascotaFeliz.App\mascotafeliz.app.frontend\obj\Debug\netcoreapp3.1\Razor\Pages\Veterinarios\ListarVeterinarios.cshtml.g.cs
